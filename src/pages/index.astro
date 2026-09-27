@@ -1,6 +1,8 @@
 ---
 import { getPostDate } from "@/utils/postDate";
+import { Image } from "astro:assets";
 import { getCollection } from "astro:content";
+import avatar from "@/assets/images/javier-avatar.png";
 import IconArrowRight from "@/assets/icons/IconArrowRight.svg";
 import IconRss from "@/assets/icons/IconRss.svg";
 import Card from "@/components/Card.astro";
@@ -31,9 +33,13 @@ const recentPosts = posts2025AndLater.filter(({ data }) => !data.featured);
     <section id="hero" class="pt-6 pb-4">
       <div class="flex flex-col sm:flex-row items-start gap-4">
         <a href="/about" class="block mx-auto sm:mx-0 group">
-          <img 
-            src="/javier-avatar.png" 
-            alt="Javier Murillo" 
+          <Image
+            src={avatar}
+            alt="Javier Murillo"
+            width={160}
+            height={160}
+            densities={[1, 2]}
+            loading="eager"
             class="w-40 h-40 rounded-full object-cover flex-shrink-0 transition-all duration-300 group-hover:scale-105 group-hover:shadow-xl"
           />
         </a>

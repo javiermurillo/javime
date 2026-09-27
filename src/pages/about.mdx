@@ -4,9 +4,12 @@ title: "About"
 description: "Latino software engineer in New York. Shipping software since 2014, most of it in places where being wrong is expensive: FDA Class 2 diagnostics, payment infrastructure, e-commerce at scale."
 ---
 
+import { Image } from "astro:assets";
+import avatar from "../assets/images/javier-avatar.png";
+
 <div class="flex flex-col md:flex-row gap-8 items-start">
   <div class="w-full md:w-auto md:flex-shrink-0 md:max-w-[240px]">
-    <img src="/javier-avatar.png" alt="Javier Murillo" class="w-full h-auto rounded-lg" />
+    <Image src={avatar} alt="Javier Murillo" widths={[240, 512]} sizes="(min-width: 768px) 240px, 100vw" loading="eager" class="w-full h-auto rounded-lg" />
   </div>
   <div class="flex-1 min-w-0">
     <p>I'm a Latino software engineer living in New York.</p>
