@@ -25,35 +25,3 @@ test("production artifacts never expose draft or scheduled source posts", async 
     }
   }
 });
-
-test("legacy post URLs retain redirect documents", async () => {
-  const html = await readFile(
-    "dist/posts/fixing-uisearchdisplaycontroller-on-ios-7/index.html",
-    "utf8",
-  );
-  assert.match(html, /\/posts\/2013\/fixing-uisearchdisplaycontroller-on-ios-7/);
-  assert.match(html, /http-equiv="refresh"/i);
-});
-
-test("the sitemap includes the canonical article and excludes its noindex redirect", async () => {
-  const sitemap = await readFile("dist/sitemap-0.xml", "utf8");
-  assert.ok(
-    sitemap.includes("https://steipete.me/posts/2013/fixing-uisearchdisplaycontroller-on-ios-7<"),
-  );
-  assert.equal(
-    sitemap.includes("https://steipete.me/posts/fixing-uisearchdisplaycontroller-on-ios-7<"),
-    false,
-  );
-});
-
-test("Markdown negotiation targets work for legacy aliases too", async () => {
-  for (const [alias, canonical] of [
-    ["fixing-uisearchdisplaycontroller-on-ios-7", "2013/fixing-uisearchdisplaycontroller-on-ios-7"],
-    ["2025/just-talk-to-it", "just-talk-to-it"],
-  ]) {
-    assert.equal(
-      await readFile(`dist/posts/${alias}.md`, "utf8"),
-      await readFile(`dist/posts/${canonical}.md`, "utf8"),
-    );
-  }
-});

@@ -25,13 +25,13 @@ interface Site {
 }
 
 export const SITE: Site = {
-  website: "https://steipete.me/",
-  author: "Peter Steinberger",
-  email: "peter@steipete.me",
-  profile: "https://steipete.me/about",
-  desc: "AI-powered tools from Swift roots to web frontiers. Every commit lands on GitHub for you to fork & remix.",
-  title: "Peter Steinberger",
-  ogImage: "peter-avatar.jpg",
+  website: "https://javifloat.com/",
+  author: "Javier Murillo",
+  email: "yo@javifloat.com",
+  profile: "https://javifloat.com/about",
+  desc: "Latino software engineer in New York. Shipping software since 2014, most of it in places where being wrong is expensive.",
+  title: "Javier Murillo",
+  ogImage: "javier-avatar.png",
   lightAndDarkMode: true,
   postPerIndex: 10,
   postPerPage: 10,
@@ -41,9 +41,9 @@ export const SITE: Site = {
   editPost: {
     enabled: true,
     text: "Edit on GitHub",
-    url: "https://github.com/steipete/steipete.me/edit/main/",
+    url: "https://github.com/javiermurillo/javime/edit/main/",
   },
   dynamicOgImage: true,
   lang: "en",
-  timezone: "America/Los_Angeles",
+  timezone: "America/New_York",
 };

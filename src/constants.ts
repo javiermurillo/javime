@@ -3,28 +3,21 @@ import { SITE } from "./config.ts";
 export const SOCIALS = [
   {
     name: "Github",
-    href: "https://github.com/steipete",
+    href: "https://github.com/javiermurillo",
     linkTitle: ` ${SITE.title} on Github`,
     icon: "github",
     active: true,
   },
   {
     name: "X",
-    href: "https://x.com/steipete",
+    href: "https://x.com/javifloat",
     linkTitle: `${SITE.title} on X`,
     icon: "twitter",
     active: true,
   },
   {
-    name: "BlueSky",
-    href: "https://bsky.app/profile/steipete.me",
-    linkTitle: `${SITE.title} on BlueSky`,
-    icon: "bluesky",
-    active: true,
-  },
-  {
     name: "LinkedIn",
-    href: "https://www.linkedin.com/in/steipete/",
+    href: "https://www.linkedin.com/in/murillojavier/",
     linkTitle: `${SITE.title} on LinkedIn`,
     icon: "linkedin",
     active: true,

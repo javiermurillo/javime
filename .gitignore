@@ -38,3 +38,6 @@ src/content/temp/
 
 # jetbrains setting folder
 .idea/
+
+# local agent notes
+CLAUDE.md

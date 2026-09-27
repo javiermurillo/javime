@@ -1,6 +1,6 @@
-# Peter Steinberger's Personal Website
+# Javier Murillo's Personal Website
 
-Source for [steipete.me](https://steipete.me), built with [Astro](https://astro.build), styled with Tailwind CSS, and deployed on Vercel. Blog posts also have plain Markdown endpoints for [steipete.md](https://steipete.md).
+Source for [javifloat.com](https://javifloat.com), built with [Astro](https://astro.build), styled with Tailwind CSS, and deployed on Vercel. Pages and posts also have plain Markdown endpoints (append `.md` to the URL).
 
 ## Development
 
@@ -47,11 +47,11 @@ Vercel builds GitHub pushes automatically with Corepack, a frozen pnpm install, 
 
 Blog posts and documentation are [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/); code and code snippets are [MIT](LICENSE).
 
-The site began with [Sat Naing's AstroPaper theme](https://github.com/satnaing/astro-paper).
+The site began as a fork of [Peter Steinberger's steipete.me](https://github.com/steipete/steipete.me), which itself started from [Sat Naing's AstroPaper theme](https://github.com/satnaing/astro-paper).
 
 Drafts never publish. Scheduled posts publish within the configured 15-minute margin; development can preview future posts. Unlisted posts are accessible directly and omitted from listings and search. Each post keeps its established canonical URL; legacy aliases redirect to it.
 
-Vercel routing middleware serves Markdown for explicit `Accept: text/markdown` requests and on steipete.md. It honors media-type quality values and handles GET/HEAD only. Markdown-file redirects to steipete.md preserve the full document path, including `index.md`. `pnpm run preview` serves static files; verify host/header negotiation on a Vercel preview.
+Vercel routing middleware serves Markdown for explicit `Accept: text/markdown` requests. It honors media-type quality values and handles GET/HEAD only. `pnpm run preview` serves static files; verify header negotiation on a Vercel preview.
 
 Article shortcuts: J/Right moves to the next post, K/Left to the previous post; editing fields and code-block arrow scrolling retain their normal keys. Escape closes the mobile navigation. Browser behavior is initialized and disposed through `src/scripts/page.ts`; the early theme script remains separate to prevent a color flash.
 

@@ -1,5 +1,5 @@
 (() => {
-  const owner = Symbol.for("steipete.theme");
+  const owner = Symbol.for("javifloat.theme");
   if (window[owner]) {
     window[owner]();
     return;

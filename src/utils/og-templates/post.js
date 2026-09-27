@@ -111,7 +111,7 @@ export default async (post) => {
                             type: "span",
                             props: {
                               style: { overflow: "hidden", fontWeight: "bold" },
-                              children: "steipete.me",
+                              children: "javifloat.com",
                             },
                           },
                         ],

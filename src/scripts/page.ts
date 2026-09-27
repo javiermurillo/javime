@@ -2,7 +2,7 @@ import { initializeNavigation } from "./navigation.ts";
 import { initializePost } from "./post.ts";
 import { initializeSearch } from "./search.ts";
 
-const lifecycle = Symbol.for("steipete.pageLifecycle");
+const lifecycle = Symbol.for("javifloat.pageLifecycle");
 type PageDocument = Document & { [lifecycle]?: () => void };
 
 export function installPageLifecycle(document: Document) {

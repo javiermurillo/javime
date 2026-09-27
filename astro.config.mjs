@@ -38,12 +38,12 @@ export default defineConfig({
     }),
     AstroPWA({
       registerType: "autoUpdate",
-      includeAssets: ["favicon.ico", "peter-avatar.jpg"],
+      includeAssets: ["favicon.ico", "javier-avatar.png"],
       manifest: {
-        name: "Peter Steinberger",
-        short_name: "steipete",
+        name: "Javier Murillo",
+        short_name: "javifloat",
         description:
-          "AI-powered tools from Swift roots to web frontiers. Everything I build is open source.",
+          "Latino software engineer in New York. Shipping software since 2014, most of it in places where being wrong is expensive.",
         theme_color: "#006cac",
         background_color: "#fdfdfd",
         display: "standalone",
@@ -57,15 +57,15 @@ export default defineConfig({
             type: "image/x-icon",
           },
           {
-            src: "peter-avatar.jpg",
+            src: "javier-avatar.png",
             sizes: "192x192",
-            type: "image/jpeg",
+            type: "image/png",
             purpose: "any",
           },
           {
-            src: "peter-avatar.jpg",
+            src: "javier-avatar.png",
             sizes: "512x512",
-            type: "image/jpeg",
+            type: "image/png",
             purpose: "any maskable",
           },
         ],

@@ -20,8 +20,7 @@ export function prefersMarkdown(accept: string) {
 export function markdownTarget(request: Request): URL | undefined {
   if (request.method !== "GET" && request.method !== "HEAD") return;
   const url = new URL(request.url);
-  const markdownDomain = url.hostname === "steipete.md" || url.hostname === "www.steipete.md";
-  if (!markdownDomain && !prefersMarkdown(request.headers.get("accept") ?? "")) return;
+  if (!prefersMarkdown(request.headers.get("accept") ?? "")) return;
 
   const path = url.pathname.replace(/\/+$/, "") || "/";
   if (path === "/") {

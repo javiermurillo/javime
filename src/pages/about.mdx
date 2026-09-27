@@ -1,49 +1,63 @@
 ---
 layout: ../layouts/AboutLayout.astro
 title: "About"
-description: "San Francisco. Creator of OpenClaw, building personal agents at OpenAI. Open source everything. Conference speaker & writer on tech innovation."
+description: "Latino software engineer in New York. Shipping software since 2014, most of it in places where being wrong is expensive: FDA Class 2 diagnostics, payment infrastructure, e-commerce at scale."
 ---
 
-import NewsletterForm from '../components/NewsletterForm.astro';
-
 <div class="flex flex-col md:flex-row gap-8 items-start">
-  <div class="w-full md:w-auto md:flex-shrink-0 md:max-w-[281px]">
-    <img src="/peter-office.jpg" alt="Peter in his office setup" class="w-full h-auto rounded-lg" />
+  <div class="w-full md:w-auto md:flex-shrink-0 md:max-w-[240px]">
+    <img src="/javier-avatar.png" alt="Javier Murillo" class="w-full h-auto rounded-lg" />
   </div>
   <div class="flex-1 min-w-0">
-    <p>I made [OpenClaw](https://github.com/openclaw/openclaw) — the open-source personal AI agent that became GitHub's most-starred software project, now stewarded by the independent [OpenClaw Foundation](https://www.openclaw.org/).</p>
-    <p>Since February 2026 I'm at OpenAI, working on bringing agents to everyone. Next mission: an agent even my mum can use.</p>
-    <p>Before that I bootstrapped [PSPDFKit](https://www.nutrient.io/) (now Nutrient) to a nine-figure exit, burned out, retired — then AI got good and pulled me back in.</p>
-    <p>I live in San Francisco.</p>
-    <p>I'm looking for new opportunities to share my learnings at conferences.</p>
-    <p>[Check out my speaking history & topics](https://github.com/steipete/speaking). The claw is the law. 🦞</p>
+    <p>I'm a Latino software engineer living in New York.</p>
+    <p>I've been shipping software since 2014, most of it in places where being wrong is expensive: FDA Class 2 diagnostics, payment infrastructure, e-commerce at scale. I was employee #3 at a fintech that grew from $18k to $100M a year in processed volume, and I once cut infrastructure costs 72% by refusing to split a monolith that didn't need splitting.</p>
+    <p>These days I spend my time on one question from two directions: how much of this can an agent do, and who is accountable when it does.</p>
   </div>
 </div>
 
-## GitHub Activity
+## How I work
 
-<div class="bg-secondary p-0 rounded-lg">
-  <img 
-    src="https://ghchart.rshah.org/steipete" 
-    alt="Peter's GitHub Contribution Graph" 
-    class="w-full"
-    style="max-width: 100%; height: auto;"
-    loading="lazy"
-  />
-</div>
+**Pragmatic architecture.** I default to monolith principles and make you argue for the split. Resisting premature microservices at Breazy cut infrastructure costs by 72%.
 
-I build what excites me and release it all as open source.
+**Regulated environments.** I ship under FDA Class 2 and HIPAA, and write the QMS documentation that has to survive an audit. Constraints most teams have never worked under, and that AI tooling is about to run into.
 
-[Follow me on GitHub](https://github.com/steipete/) and catch the back-story in [Finding My Spark](/posts/2025/finding-my-spark-again/).
+## Where I've worked
+
+### Genalyte, Inc.
+
+*2022 – Present · MedTech & Regulated Engineering*
+
+Redefining the lab experience with the Merlin "lab-in-a-box" platform.
+
+- **Business Continuity:** Independently managed critical Ruby on Rails codebase after team reduction, ensuring zero downtime for diagnostic reporting.
+- **Modernization:** Leading modernization of tech stack (Kubernetes on AWS) for the next generation of FDA-compliant software.
+- **Compliance:** Producing QMS documentation for FDA audits while maintaining agile velocity.
+
+### Code Climate
+
+*2022 – 2023 · Engineering Intelligence*
+
+- **Performance:** Forensic analysis of PostgreSQL/Arel plans. Reduced system timeouts by 63% via query optimization.
+- **API Standardization:** Led JSON API spec adoption to reduce design friction.
+- **Component Reuse:** Implemented Storybook and CI workflows for React/TypeScript UI consistency.
+
+### Breazy, Inc.
+
+*2018 – 2022 · E-Commerce Scale*
+
+- **The Monolith Strategy:** Refactored services into a core Rails app, reducing infrastructure costs by 72%.
+- **Performance:** Achieved 2.6x site speed increase via ShopifyAPI & JS tuning.
+- **Innovation:** Developed ERC-721/ERC-20 tokens for loyalty programs.
+
+### Conekta
+
+*2014 – 2016 · Fintech Hypergrowth (Employee #3)*
+
+- **Scaling:** Key driver in growth from $18k to $100M USD/year processed volume (16,000% increase).
+- **Retention:** Built internal tools for CS teams, contributing to 98% client retention.
 
 ## Stay Connected
 
-<NewsletterForm />
+Find me on [GitHub](https://github.com/javiermurillo), [X](https://x.com/javifloat), and [LinkedIn](https://www.linkedin.com/in/murillojavier/), or email [yo@javifloat.com](mailto:yo@javifloat.com).
 
-If you'd like to connect or have questions about my work, feel free to reach out through any of the links below.
-
-Tip: Change steipete.me to steipete.md for the markdown version.
-
-<div class="not-prose">
-  <p class="text-sm text-foreground/60 mt-8">Imprint: Peter Steinberger, Siebensterngasse 15, 1070 Vienna, Austria</p>
-</div>
+Tip: Add `.md` to any post URL for the markdown version.

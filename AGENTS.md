@@ -6,7 +6,7 @@ Site configuration lives in `src/config.ts`; social and sharing links live in `s
 
 ## Blog content
 
-Never create or propose blog content without Peter's explicit request. For a requested new post:
+Never create or propose blog content without Javier's explicit request. For a requested new post:
 
 - If no topic/title is supplied, ask for it.
 - Use a short branch slug and scaffold `src/content/blog/<year>/<slug>.md`.

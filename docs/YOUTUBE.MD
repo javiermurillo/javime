@@ -41,7 +41,7 @@ The Markdown build pipeline converts these shortcodes to responsive YouTube ifra
 Twitter embeds work in a similar way:
 
 ```
-{% twitter https://twitter.com/steipete/status/1134003594804547584 %}
+{% twitter https://twitter.com/javifloat/status/2027463986153742770 %}
 ```
 
 ## Best Practices

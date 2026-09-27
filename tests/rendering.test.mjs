@@ -22,7 +22,7 @@ test("shortcodes preserve surrounding prose, emphasis and links", async () => {
 
 test("multiple YouTube formats and Twitter legacy tags render at build time", async () => {
   const html = await render(
-    '{% youtube https://youtu.be/2OuQarA0a7I %} between {% youtube https://www.youtube.com/embed/2OuQarA0a7I %}\n\n{% twitter https://x.com/steipete/status/1266799174563041282?s=20 %}\n\n<TwitterEmbed id="1277623561604214784" />',
+    '{% youtube https://youtu.be/2OuQarA0a7I %} between {% youtube https://www.youtube.com/embed/2OuQarA0a7I %}\n\n{% twitter https://x.com/javifloat/status/1266799174563041282?s=20 %}\n\n<TwitterEmbed id="1277623561604214784" />',
   );
   assert.equal((html.match(/<iframe/g) ?? []).length, 2);
   assert.match(html, /between/);

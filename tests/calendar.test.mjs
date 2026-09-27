@@ -39,7 +39,7 @@ test("publication calendar fields follow the configured display timezone", () =>
 });
 
 test("sitemap recency follows the current UTC year without a yearly config edit", () => {
-  const item = { url: "https://steipete.me/posts/2026/openclaw/" };
+  const item = { url: "https://javifloat.com/posts/2026/openclaw/" };
   for (const [year, priority, changefreq] of [
     [2026, 0.8, "weekly"],
     [2027, 0.8, "weekly"],
@@ -48,7 +48,7 @@ test("sitemap recency follows the current UTC year without a yearly config edit"
     [2032, 0.4, "yearly"],
   ]) {
     const actual = serializeSitemapItem(item, new Date(`${year}-01-01T00:00:00Z`));
-    assert.equal(actual.url, "https://steipete.me/posts/2026/openclaw");
+    assert.equal(actual.url, "https://javifloat.com/posts/2026/openclaw");
     assert.equal(actual.priority, priority);
     assert.equal(actual.changefreq, changefreq);
   }
@@ -57,9 +57,9 @@ test("sitemap recency follows the current UTC year without a yearly config edit"
 
 test("sitemap page categories use URL paths and preserve the root slash", () => {
   const now = new Date("2026-09-13T12:00:00Z");
-  const serialize = (path) => serializeSitemapItem({ url: `https://steipete.me${path}` }, now);
+  const serialize = (path) => serializeSitemapItem({ url: `https://javifloat.com${path}` }, now);
   assert.deepEqual(serialize("/"), {
-    url: "https://steipete.me/",
+    url: "https://javifloat.com/",
     priority: 1,
     changefreq: "daily",
     lastmod: now.toISOString(),

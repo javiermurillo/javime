@@ -3,9 +3,9 @@ import { markdownResponse } from "@/utils/markdownResponse";
 import type { APIRoute } from "astro";
 
 export const GET: APIRoute = async () => {
-  const markdownContent = `# Peter Steinberger (@steipete)
+  const markdownContent = `# Javier Murillo (@javifloat)
 
-AI-powered tools from Swift roots to web frontiers. Every commit lands on GitHub for you to fork & remix.
+${SITE.desc}
 
 ## Navigation
 
@@ -16,13 +16,14 @@ AI-powered tools from Swift roots to web frontiers. Every commit lands on GitHub
 
 ## Links
 
-- Twitter: [@steipete](https://twitter.com/steipete)
-- GitHub: [@steipete](https://github.com/steipete)
+- X: [@javifloat](https://x.com/javifloat)
+- GitHub: [@javiermurillo](https://github.com/javiermurillo)
+- LinkedIn: [murillojavier](https://www.linkedin.com/in/murillojavier/)
 - Email: ${SITE.email}
 
 ---
 
-*This is the markdown-only version of steipete.me. Visit [steipete.me](https://steipete.me) for the full experience.*`;
+*This is the markdown-only version of javifloat.com. Visit [javifloat.com](https://javifloat.com) for the full experience.*`;
 
   return markdownResponse(markdownContent);
 };
