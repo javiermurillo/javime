@@ -3,7 +3,7 @@ title: "WebMCP: Giving Your Website Tools an Agent Can Actually Call"
 description: "WebMCP lets a page expose its real functions to an agent inside the user's session. That's a decision about what an agent may act on, not a compatibility patch."
 pubDatetime: 2026-08-12
 tags: ["webmcp", "agents", "web-platform", "security"]
-draft: true
+draft: false
 ---
 
 *An engineer's take on the Web Model Context Protocol and what it means to build for agents, not just users*

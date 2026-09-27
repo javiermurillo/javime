@@ -3,7 +3,7 @@ title: "Quantized vs. Unquantized: What You're Actually Trading Away When You Ru
 description: "Ollama hands you a quantized model by default. That default is usually fine — but 'usually' is doing a lot of work, and you should know what you traded away."
 pubDatetime: 2026-08-13
 tags: ["llm", "quantization", "local-inference", "ollama"]
-draft: true
+draft: false
 ---
 
 *An engineer's take on precision, memory, and quality for local LLMs — with Qwen, Gemma, and Ollama as the running examples*
